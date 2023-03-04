@@ -8,7 +8,6 @@
 #   chart:
 #     spec:
 #       chart: ./basic
-#       version: '0.1.5'
 #       sourceRef:
 #         kind: GitRepository
 #         name: basic-chart
