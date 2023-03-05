@@ -4,7 +4,6 @@ metadata:
   name: testapp
   namespace: default
 spec:
-  chart:
   values:
     appName: testapp
     replicaCount: 2
