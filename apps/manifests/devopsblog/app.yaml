@@ -18,7 +18,7 @@ spec:
     replicaCount: 1
     image:
       repository: devkrolikowski/wordpress-generic
-      tag: 0.1.1 # {"$imagepolicy": "flux-system:devopsblog:tag"}
+      tag: 0.0.1 # {"$imagepolicy": "flux-system:devopsblog:tag"}
     service:
       type: ClusterIP
       port: 80
