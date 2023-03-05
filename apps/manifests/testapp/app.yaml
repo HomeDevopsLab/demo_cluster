@@ -21,6 +21,13 @@ spec:
     image:
       repository: devkrolikowski/sample-app
       tag: 2.2.1 # {"$imagepolicy": "flux-system:testapp:tag"}
+    resources:
+      limits:
+        memory: "50Mi"
+        cpu: "50m"
+      requests:
+        memory: "10Mi"
+        cpu: "10m"
     service:
       type: ClusterIP
       port: 80
