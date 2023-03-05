@@ -1,7 +1,7 @@
 6 lines (6 loc) · 142 Bytes
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
+bases:
   - ../common/basic
 patchesStrategicMerge:
   - app.yaml
