@@ -14,7 +14,9 @@ spec:
         namespace: default
       interval: 1m
   values:
-    appName: testapp
+    application:
+      name: testapp
+      type: other
     replicaCount: 2
     image:
       repository: devkrolikowski/sample-app
