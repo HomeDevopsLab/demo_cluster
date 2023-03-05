@@ -17,7 +17,6 @@ spec:
     application:
       name: devopsblog
       type: wordpress
-      
     replicaCount: 1
     image:
       repository: devkrolikowski/wordpress-generic
@@ -28,4 +27,4 @@ spec:
     ingress:
       enabled: true
       hosts:
-        - host: devopsblog.lan
+        - host: devops.angrybits.pl
