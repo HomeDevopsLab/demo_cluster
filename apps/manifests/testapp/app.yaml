@@ -18,7 +18,7 @@ spec:
     replicaCount: 2
     image:
       repository: devkrolikowski/sample-app
-      tag: 0.6.0 # {"$imagepolicy": "flux-system:testapp:tag"}
+      tag: 1.0.0 # {"$imagepolicy": "flux-system:testapp:tag"}
     service:
       type: ClusterIP
       port: 80
