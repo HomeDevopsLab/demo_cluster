@@ -14,7 +14,10 @@ spec:
         namespace: default
       interval: 1m
   values:
-    appName: devopsblog
+    application:
+      name: devopsblog
+      type: wordpress
+      
     replicaCount: 1
     image:
       repository: devkrolikowski/wordpress-generic
