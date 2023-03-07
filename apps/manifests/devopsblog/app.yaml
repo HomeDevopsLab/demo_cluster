@@ -1,44 +1,44 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: devopsblog
-  namespace: default
-spec:
-  interval: 1m
-  chart:
-    spec:
-      chart: ./basic
-      sourceRef:
-        kind: GitRepository
-        name: basic-chart
-        namespace: default
-      interval: 1m
-  values:
-    application:
-      name: devopsblog
-      type: wordpress
-    replicaCount: 1
-    image:
-      repository: devkrolikowski/wordpress-generic
-      tag: 0.0.1 # {"$imagepolicy": "flux-system:devopsblog:tag"}
-    resources:
-      limits:
-        memory: "256Mi"
-        cpu: "500m"
-      requests:
-        memory: "50Mi"
-        cpu: "10m"
-    service:
-      type: ClusterIP
-      port: 80
-    ingress:
-      enabled: true
-      hosts:
-        - host: devops.angrybits.pl
-    volumes:
-      enabled: true
-      type:
-        nfs:
-          server: "192.168.3.2"
-          path: "/storage"
-          readOnly: false
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: devopsblog
+#   namespace: default
+# spec:
+#   interval: 1m
+#   chart:
+#     spec:
+#       chart: ./basic
+#       sourceRef:
+#         kind: GitRepository
+#         name: basic-chart
+#         namespace: default
+#       interval: 1m
+#   values:
+#     application:
+#       name: devopsblog
+#       type: wordpress
+#     replicaCount: 1
+#     image:
+#       repository: devkrolikowski/wordpress-generic
+#       tag: 0.0.1 # {"$imagepolicy": "flux-system:devopsblog:tag"}
+#     resources:
+#       limits:
+#         memory: "256Mi"
+#         cpu: "500m"
+#       requests:
+#         memory: "50Mi"
+#         cpu: "10m"
+#     service:
+#       type: ClusterIP
+#       port: 80
+#     ingress:
+#       enabled: true
+#       hosts:
+#         - host: devops.angrybits.pl
+#     volumes:
+#       enabled: true
+#       type:
+#         nfs:
+#           server: "192.168.3.2"
+#           path: "/storage"
+#           readOnly: false
