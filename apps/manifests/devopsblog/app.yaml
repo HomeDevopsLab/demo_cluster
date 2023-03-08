@@ -15,7 +15,6 @@ spec:
       interval: 1m
   values:
     application:
-      name: devopsblog
       type: wordpress
     replicaCount: 1
     image:
