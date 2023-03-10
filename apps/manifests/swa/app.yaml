@@ -19,7 +19,7 @@ spec:
     replicaCount: 2
     image:
       repository: devkrolikowski/swiss-army-knife
-      tag: 2.2.1 # {"$imagepolicy": "flux-system:testapp:tag"}
+      tag: 0.1.0 # {"$imagepolicy": "flux-system:swa:tag"}
     resources:
       limits:
         memory: "50Mi"
