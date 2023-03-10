@@ -16,7 +16,7 @@ spec:
   values:
     application:
       type: other
-    replicaCount: 2
+    replicaCount: 1
     image:
       repository: devkrolikowski/swiss-army-knife
       tag: 0.2.0 # {"$imagepolicy": "flux-system:swa:tag"}
