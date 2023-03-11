@@ -14,13 +14,6 @@ spec:
         namespace: default
       interval: 1m
   values:
-    application:
-      name: testapp
-      type: other
-    replicaCount: 2
-    image:
-      repository: devkrolikowski/sample-app
-      tag: 2.2.1 # {"$imagepolicy": "flux-system:testapp:tag"}
     resources:
       limits:
         memory: "50Mi"
@@ -33,5 +26,3 @@ spec:
       port: 80
     ingress:
       enabled: true
-      hosts:
-        - host: testapp.lan
