@@ -17,7 +17,7 @@ spec:
     application:
       name: demo-app
       type: other
-    replicaCount: 2
+    replicaCount: 1
     image:
       repository: devkrolikowski/demo_app
       tag: 0.1.3 # {"$imagepolicy": "flux-system:demo-app:tag"}
