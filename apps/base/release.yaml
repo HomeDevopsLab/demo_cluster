@@ -4,13 +4,33 @@ metadata:
   name: testapp
   namespace: default
 spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: ./basic
+      sourceRef:
+        kind: GitRepository
+        name: basic-chart
+        namespace: default
+      interval: 1m
   values:
     application:
+      name: testapp
       type: other
     replicaCount: 2
     image:
       repository: devkrolikowski/sample-app
       tag: 2.2.1 # {"$imagepolicy": "flux-system:testapp:tag"}
+    resources:
+      limits:
+        memory: "50Mi"
+        cpu: "50m"
+      requests:
+        memory: "10Mi"
+        cpu: "10m"
+    service:
+      type: ClusterIP
+      port: 80
     ingress:
       enabled: true
       hosts:
