@@ -23,10 +23,10 @@ spec:
       tag: 0.0.1 # {"$imagepolicy": "flux-system:devopsblog:tag"}
     resources:
       limits:
-        memory: "256Mi"
+        memory: "512Mi"
         cpu: "500m"
       requests:
-        memory: "50Mi"
+        memory: "150Mi"
         cpu: "10m"
     service:
       type: ClusterIP
