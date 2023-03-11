@@ -12,6 +12,5 @@ spec:
       repository: devkrolikowski/sample-app
       tag: 2.2.1 # {"$imagepolicy": "flux-system:testapp:tag"}
     ingress:
-      enabled: true
       hosts:
         - host: testapp.lan
