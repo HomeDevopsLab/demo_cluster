@@ -32,6 +32,7 @@ spec:
       port: 80
     ingress:
       enabled: true
+      tls: true
       hosts:
         - host: przyrodniczy.website
     volumes:
