@@ -23,10 +23,10 @@ spec:
     resources:
       limits:
         memory: "512Mi"
-        cpu: "500m"
+        cpu: "600m"
       requests:
-        memory: "150Mi"
-        cpu: "200m"
+        memory: "250Mi"
+        cpu: "300m"
     service:
       type: ClusterIP
       port: 80
