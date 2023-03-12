@@ -33,5 +33,6 @@ spec:
       port: 80
     ingress:
       enabled: true
+      tls: false
       hosts:
         - host: demo-app.lan
