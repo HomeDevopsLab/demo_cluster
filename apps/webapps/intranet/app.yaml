@@ -20,7 +20,7 @@ spec:
     replicaCount: 2
     image:
       repository: devkrolikowski/wordpress-generic
-      tag: 0.0.1 # {"$imagepolicy": "flux-system:intranet:tag"}
+      tag: 0.1.0 # {"$imagepolicy": "flux-system:intranet:tag"}
     resources:
       limits:
         memory: "512Mi"
