@@ -33,7 +33,6 @@ spec:
       port: 80
     ingress:
       enabled: true
-      tls: false
       hosts:
         - host: intranet.lan
     volumes:
