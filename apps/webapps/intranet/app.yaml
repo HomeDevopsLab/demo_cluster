@@ -28,9 +28,6 @@ spec:
       requests:
         memory: "150Mi"
         cpu: "200m"
-    service:
-      type: ClusterIP
-      port: 80
     ingress:
       enabled: true
       hosts:
