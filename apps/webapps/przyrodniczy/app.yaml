@@ -29,6 +29,7 @@ spec:
         cpu: "300m"
     ingress:
       enabled: true
+      ssl: true
       hosts:
         - host: przyrodniczy.website
       tls:
